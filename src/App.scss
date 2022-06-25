@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+.App {
+  position: relative;
+  .Loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    span {
+      margin: 12px;
+      font-size: 20px;
+      &:nth-of-type(1) {
+        animation: example 1s ease-in-out 0.1s infinite alternate;
+      }
+      &:nth-of-type(2) {
+        animation: example 1s ease-in-out 0.2s infinite alternate;
+      }
+      &:nth-of-type(3) {
+        animation: example 1s ease-in-out 0.3s infinite alternate;
+      }
+      &:nth-of-type(4) {
+        animation: example 1s ease-in-out 0.4s infinite alternate;
+      }
+      &:nth-of-type(5) {
+        animation: example 1s ease-in-out 0.5s infinite alternate;
+      }
+      &:nth-of-type(6) {
+        animation: example 1s ease-in-out 0.6s infinite alternate;
+      }
+      &:nth-of-type(7) {
+        animation: example 1s ease-in-out 0.7s infinite alternate;
+      }
+    }
+    @keyframes example {
+      0% {
+        color: red;
+      }
+      25% {
+        color: yellow;
+      }
+      50% {
+        color: blue;
+        transform: translateY(10px);
+      }
+      75% {
+        color: green;
+      }
+      100% {
+        color: red;
+      }
+    }
+    // div {
+    //   animation-name: example;
+    //   animation-duration: 5s;
+    //   animation-timing-function: linear;
+    //   animation-delay: 2s;
+    //   animation-iteration-count: infinite;
+    //   animation-direction: alternate;
+    // }
+    // div {
+    //   animation: example 5s linear 2s infinite alternate;
+    // }
+  }
+}
+.text-muroexe {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 28px;
+  color: #788188;
+  &.strongBold {
+    color: #000;
+    font-weight: 700;
+  }
+}
+/* Reset_Element_Style */
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+  &.nav-link {
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+/*Page_Scroll_Bar_Style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}

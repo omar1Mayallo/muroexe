@@ -1,0 +1,117 @@
+header {
+  background-color: white;
+  &.fixed-nav {
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1039; //because sideNavigation 1040
+    .navbar {
+      padding: 0;
+    }
+  }
+  a {
+    color: rgba(0, 0, 0, 0.55);
+    &.active {
+      color: black;
+    }
+    &:hover {
+      color: inherit;
+    }
+  }
+  // NavBar
+  nav {
+    .navbar-brand h1 {
+      color: black;
+      margin: 5px 0;
+      font-size: 35px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      .logo-bold {
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+    .nav-element {
+      font-size: 16px;
+      padding: 0.5rem 1rem;
+    }
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+  }
+}
+// Icons
+.nav-icons-box {
+  display: flex;
+  margin-left: 10px;
+  @media (max-width: 767px) {
+    margin: 15px 20px 0 0;
+  }
+  .nav-icon {
+    margin-right: 25px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  .profile-icon {
+    font-size: 23px;
+    svg {
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
+//Dropdown
+.dropdown-menu {
+  .dropdown-element {
+    background-color: black;
+    padding: 10px;
+    a {
+      color: rgb(255 255 255 / 65%);
+      &.active {
+        color: white;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+// Sidebar
+.offcanvas.show {
+  .offcanvas-header {
+    .offcanvas-title {
+      font-size: 25px;
+      font-weight: 300;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+  .offcanvas-body {
+    .nav-element {
+      transition: 0.3s;
+      font-size: 16px;
+      padding: 5px;
+      margin: 10px 0;
+      &:hover {
+        margin-left: 5px;
+      }
+    }
+    .sign-out {
+      cursor: pointer;
+    }
+    .dropdown {
+      margin-left: 5px;
+    }
+    a[aria-expanded] {
+      @media (max-width: 767px) {
+        color: black;
+      }
+    }
+  }
+}

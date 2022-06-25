@@ -1,0 +1,61 @@
+@mixin shrinkLabel {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 40px;
+  label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s ease all;
+    &.to-small {
+      @include shrinkLabel();
+    }
+  }
+  input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    &:focus {
+      outline: none;
+      & ~ label {
+        @include shrinkLabel();
+      }
+      & ~ .bar:after,
+      & ~ .bar:before {
+        width: 50%;
+      }
+    }
+  }
+  .bar {
+    position: relative;
+    display: block;
+  }
+  .bar:before,
+  .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: black;
+    transition: 0.3s ease all;
+  }
+  .bar:before {
+    left: 50%;
+  }
+  .bar:after {
+    right: 50%;
+  }
+}

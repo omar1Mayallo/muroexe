@@ -1,0 +1,59 @@
+footer {
+  color: white;
+  background-color: black;
+  .ft-block {
+    .ft-link,
+    .ft-contact-item {
+      color: #6a6a6a;
+      margin-bottom: 8px;
+      a {
+        transition: 0.2s;
+      }
+      &:hover {
+        a {
+          color: white;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+  .ft-contact-item-social {
+    color: #6a6a6a;
+    .social {
+      cursor: pointer;
+      font-size: 25px;
+      margin-right: 20px;
+      &:hover {
+        &.Fac {
+          color: #3b5998;
+        }
+        &.Twi {
+          color: #55acee;
+        }
+        &.Ins {
+          color: #e95950;
+        }
+        &.YouT {
+          color: #ff0000;
+        }
+      }
+    }
+  }
+  .copyright {
+    color: #6a6a6a;
+  }
+}
+footer.light {
+  color: black;
+  background-color: #f8f8f8;
+  .ft-block {
+    .ft-link {
+      color: #6a6a6a;
+      &:hover {
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

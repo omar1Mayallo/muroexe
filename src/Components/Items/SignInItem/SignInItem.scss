@@ -1,0 +1,25 @@
+.sign-box {
+  .head-box {
+    margin-bottom: 20px;
+    span {
+      display: block;
+    }
+    .sign-head {
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .sign-text {
+      font-size: 18px;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .err {
+    color: red;
+    font-size: 14px;
+  }
+}

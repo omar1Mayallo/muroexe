@@ -1,0 +1,33 @@
+.wish-item {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  .img-box {
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  .text-box {
+    margin: 10px 0;
+    h4 {
+      font-size: 17px;
+      height: 40px;
+      color: #c20000;
+    }
+    span {
+      font-weight: 300;
+      color: gray;
+    }
+  }
+  .remove-button {
+    padding: 3px 5px;
+    color: #c20000;
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    svg {
+      cursor: pointer;
+      font-size: 25px;
+    }
+  }
+}

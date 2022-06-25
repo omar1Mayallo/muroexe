@@ -1,0 +1,11 @@
+.info-list-item {
+  display: none;
+  &.active-info {
+    display: block;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+}

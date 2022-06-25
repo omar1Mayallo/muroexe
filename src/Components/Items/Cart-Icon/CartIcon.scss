@@ -1,0 +1,28 @@
+.cart-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 23px;
+
+  svg {
+    color: black;
+  }
+  .cart-counter {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    top: 0;
+    right: -50%;
+  }
+}
+.modal-footer {
+  justify-content: center;
+  padding: 0;
+}

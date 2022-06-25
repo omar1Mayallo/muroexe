@@ -1,0 +1,14 @@
+.insta-card {
+  cursor: pointer;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  height: 100%;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

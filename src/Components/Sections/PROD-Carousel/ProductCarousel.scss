@@ -1,0 +1,12 @@
+.carousel-block {
+  position: relative;
+  padding-bottom: 30px;
+  .dot-carousel {
+    button {
+      width: 12px;
+      height: 12px;
+      border: none;
+      margin-right: 12px;
+    }
+  }
+}

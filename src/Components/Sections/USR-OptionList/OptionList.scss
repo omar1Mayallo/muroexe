@@ -1,0 +1,16 @@
+.options-list {
+  .option-list-item {
+    padding: 10px 10px;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(160, 160, 160, 0.25);
+    cursor: pointer;
+    &:hover,
+    &.active-option {
+      color: #014ba0;
+      font-style: italic;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+}
